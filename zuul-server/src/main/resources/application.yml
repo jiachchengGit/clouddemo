@@ -10,8 +10,8 @@ spring:
 zuul:
   routes:
     api-a:
-      path: /api-a/**
+      path: /apia/**
       serviceId: feign-consumer
     api-b:
-      path: /api-b/**
+      path: /apib/**
       serviceId: ribbon-consumer
