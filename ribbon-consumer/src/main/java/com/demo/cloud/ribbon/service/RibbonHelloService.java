@@ -15,7 +15,7 @@ public class RibbonHelloService {
 
     @HystrixCommand(fallbackMethod = "hiError")
     public String hiService(String name) {
-        return restTemplate.getForObject("http://SERVICE-HI/hi?name="+name,String.class);
+        return restTemplate.getForObject("http://eureka-provider/service/hiFromFeign?name="+name,String.class);
     }
 
     public String hiError(String name) {

@@ -1,4 +1,4 @@
-package com.demo.cloud.provider;
+package com.demo.cloud.provider.controller;
 
 import com.demo.cloud.provider.client.ServiceHiFromFeign;
 import org.springframework.beans.factory.annotation.Autowired;

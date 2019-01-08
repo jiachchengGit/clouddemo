@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: turbine-dashboard
+server:
+  port: 8899
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://euraka-server2:8751/eureka/,http://euraka-server1:8761/eureka/
+turbine:
+  app-config: RIBBON-CONSUMER
+  #cluster-name-expression: default
+  combine-host-port: true
